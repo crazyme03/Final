@@ -10,6 +10,8 @@
   display: table-cell;
   height: 33%;
   width: 33%;
+  text-align: center;
+  vertical-align: middle;
 }
 #a1, #a7 {
   border-left: 2px solid black;
@@ -21,4 +23,8 @@
 }
 #a4 {
   border: 2px solid black;
+}
+.box img {
+  width: 6em;
+  height: 6em;
 }
