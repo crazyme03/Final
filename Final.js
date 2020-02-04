@@ -4,14 +4,14 @@ let toer = 0
 function tic(x) {
   if (ticTacBoard[x] == 0) {
     ticTacBoard[x] = 1
-    document.getElementById("a"+x).style.backgroundColor = red;
+    makeMark(x);
   }
 }
 
 function tac(x) {
   if (ticTacBoard[x] == 0) {
     ticTacBoard[x] = 2
-    document.getElementById("a"+x).style.backgroundColor = black;
+    makeMark(x);
   }
 }
 
@@ -21,4 +21,8 @@ function toe(x) {
   } else {
     tac(x);
   }
+  toer++;
+}
+function makeMark(x) {
+
 }
