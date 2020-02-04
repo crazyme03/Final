@@ -1,0 +1,24 @@
+.board {
+  display: table;
+  width: 21em;
+  height: 21em;
+}
+.row {
+  display: table-row;
+}
+.box {
+  display: table-cell;
+  height: 33%;
+  width: 33%;
+}
+#a1, #a7 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+#a3, #a5 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#a4 {
+  border: 2px solid black;
+}
