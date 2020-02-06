@@ -1,0 +1,43 @@
+body{
+  text-align: center;
+  background-color: #1abc9c;
+  margin: 0px;
+}
+header{
+  background-color: crimson;
+  display: inline-block;
+  width: 100%;
+}
+footer{
+  background-color: white;
+}
+.board {
+  display: table;
+  width: 21em;
+  height: 21em;
+}
+.row {
+  display: table-row;
+}
+.box {
+  display: table-cell;
+  height: 33%;
+  width: 33%;
+  text-align: center;
+  vertical-align: middle;
+}
+#a1, #a7 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+#a3, #a5 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#a4 {
+  border: 2px solid black;
+}
+.box img {
+  width: 6em;
+  height: 6em;
+}
