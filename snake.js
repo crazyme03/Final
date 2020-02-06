@@ -1,6 +1,6 @@
 function setup() {
   frameRate(5);
-  createCanvas(900,900);
+  createCanvas(401,401);
 }
 var boardSize = 64;
 var boardLength = 8;
