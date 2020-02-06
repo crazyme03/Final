@@ -11,7 +11,7 @@ for (i = 0; i < boardSize; i++){
   if ((i%boardLength) == 0){
     j++;
   }
-  spaces[i] = [(100*i)%800, 100*j, 100, 100, 0,];
+  spaces[i] = [(50*i)%400, 50*j, 50, 50, 0,];
 }
 var head = 0;
 var headDirection = 1;
@@ -90,15 +90,15 @@ function draw() {
         fill(color(255,255,255));
       }
       rect(spaces[i][0], spaces[i][1], spaces[i][2], spaces[i][3]);
-      fill(color(0,0,0));
-      text(str(i), spaces[i][0]+50, spaces[i][1]+50);
+      //fill(color(0,0,0));
+      //text(str(i), spaces[i][0]+25, spaces[i][1]+25);
     }
   } else {
     for (i = 0; i < boardSize; i++){
       fill(color(255, 0, 0));
       rect(spaces[i][0], spaces[i][1], spaces[i][2], spaces[i][3]);
-      fill(color(0,0,0));
-      text(str(i), spaces[i][0]+50, spaces[i][1]+50);
+      //fill(color(0,0,0));
+      //text(str(i), spaces[i][0]+25, spaces[i][1]+25);
     }
     for (i = 0; i < boardSize; i++){
       spaces[i][4] = 0;
