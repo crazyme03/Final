@@ -1,6 +1,6 @@
 function setup() {
   frameRate(5);
-  createCanvas(900,900);
+  createCanvas(401,401);
 }
 var boardSize = 64;
 var boardLength = 8;
@@ -17,6 +17,7 @@ var head = 0;
 var headDirection = 1;
 var headTime = 3;
 var end = false;
+var bot = 0;
 function keyPressed() {
   if ((keyCode === UP_ARROW)&&(headDirection != 8)){
     headDirection = -8;
@@ -26,12 +27,14 @@ function keyPressed() {
     headDirection = 8;
   } else if ((keyCode === LEFT_ARROW)&&(headDirection != 1)){
     headDirection = -1;
+  } else if (keyCode === BACKSPACE){
+    bot = (bot + 1)%2
   }
 }
 function draw() {
 
 
-  if (document.getElementById('bot').value == 1){
+  if (bot == 1){
     if ((head > 0 && head < 8) || (head > 16 && head < 23) || (head > 32 && head < 39) || (head > 48 && head < 55)){
       headDirection = -1;
     } else if ((head > 7 && head < 14) || (head > 23 && head < 30) || (head > 39 && head < 46) || (head > 55 && head < 63)){
