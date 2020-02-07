@@ -46,8 +46,8 @@ function toe(x) {
   toer++;
 }
 function makeCross(x) {
-  document.getElementById('a'+x).innerHTML = '<img src="images/tic.png" alt="tic">';
+  document.getElementById('a'+x).innerHTML = '<p>X</p>';
 }
 function makeCirc(x) {
-  document.getElementById('a'+x).innerHTML = '<img src="images/tac.png" alt="tac">';
+  document.getElementById('a'+x).innerHTML = '<p>O</p>';
 }

@@ -10,11 +10,19 @@ header{
 }
 footer{
   background-color: white;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer p {
+  margin:0;
 }
 .board {
   display: table;
   width: 21em;
   height: 21em;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row {
   display: table-row;
@@ -25,6 +33,16 @@ footer{
   width: 33%;
   text-align: center;
   vertical-align: middle;
+}
+.box p {
+  font-size: 76px;
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+}
+body > p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #a1, #a7 {
   border-left: 2px solid black;
@@ -40,4 +58,7 @@ footer{
 .box img {
   width: 6em;
   height: 6em;
+}
+body > img {
+  width: 400px;
 }
